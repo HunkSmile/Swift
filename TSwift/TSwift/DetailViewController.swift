@@ -186,7 +186,10 @@ class DetailViewController : UIViewController, UIPickerViewDataSource, UIPickerV
     // Button Action
     func buttonAction(sender: UIButton)
     {
-        var alert = UIAlertController(title: "Title", message: "Message", preferredStyle: UIAlertControllerStyle.Alert)
+        var mathSum = MathSum()
+        var sum = mathSum.sum(11, number2: 22)
+        
+        var alert = UIAlertController(title: "Title", message: String(format: "Result = %i", sum), preferredStyle: UIAlertControllerStyle.Alert)
         alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
         self.presentViewController(alert, animated: true, completion: nil)
         

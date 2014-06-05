@@ -13,6 +13,7 @@
 		B48BE6A5193F2769009DC8E5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B48BE6A4193F2769009DC8E5 /* Images.xcassets */; };
 		B48BE6B1193F2769009DC8E5 /* TSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48BE6B0193F2769009DC8E5 /* TSwiftTests.swift */; };
 		B48BE6BD193F27C3009DC8E5 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48BE6BC193F27C3009DC8E5 /* RootViewController.swift */; };
+		B4A575BD19403F6A008BBBE6 /* MathSum.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A575BC19403F6A008BBBE6 /* MathSum.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,10 @@
 		B48BE6AF193F2769009DC8E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B48BE6B0193F2769009DC8E5 /* TSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSwiftTests.swift; sourceTree = "<group>"; };
 		B48BE6BC193F27C3009DC8E5 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		B4A575BA194020C2008BBBE6 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
+		B4A575BB19403F69008BBBE6 /* TSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TSwift-Bridging-Header.h"; sourceTree = "<group>"; };
+		B4A575BC19403F6A008BBBE6 /* MathSum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MathSum.m; sourceTree = "<group>"; };
+		B4A575BE19403FA2008BBBE6 /* MathSum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MathSum.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +86,10 @@
 				B48BE6BC193F27C3009DC8E5 /* RootViewController.swift */,
 				B42D3D2F193F4994005074F7 /* DetailViewController.swift */,
 				B42D3D33193F53E9005074F7 /* swift-hero@2x.png */,
+				B4A575BA194020C2008BBBE6 /* MyPlayground.playground */,
+				B4A575BE19403FA2008BBBE6 /* MathSum.h */,
+				B4A575BC19403F6A008BBBE6 /* MathSum.m */,
+				B4A575BB19403F69008BBBE6 /* TSwift-Bridging-Header.h */,
 				B48BE6A4193F2769009DC8E5 /* Images.xcassets */,
 				B48BE6A0193F2769009DC8E5 /* Supporting Files */,
 			);
@@ -211,6 +220,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B42D3D30193F4994005074F7 /* DetailViewController.swift in Sources */,
+				B4A575BD19403F6A008BBBE6 /* MathSum.m in Sources */,
 				B48BE6BD193F27C3009DC8E5 /* RootViewController.swift in Sources */,
 				B48BE6A3193F2769009DC8E5 /* AppDelegate.swift in Sources */,
 			);
@@ -317,9 +327,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = TSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TSwift/TSwift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -328,9 +341,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = TSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TSwift/TSwift-Bridging-Header.h";
 			};
 			name = Release;
 		};
