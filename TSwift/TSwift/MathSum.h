@@ -6,6 +6,12 @@
 //  Copyright (c) 2014年 Hunk. All rights reserved.
 //
 
+/*!
+ *  使用方式
+ *  var mathSum = MathSum()
+ *  var sum = mathSum.sum(11, number2: 22)
+ */
+
 #import <Foundation/Foundation.h>
 
 @interface MathSum : NSObject
