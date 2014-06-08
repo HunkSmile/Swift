@@ -1,14 +1,14 @@
 //
-//  TSwiftTests.swift
-//  TSwiftTests
+//  TSwfitTests.swift
+//  TSwfitTests
 //
-//  Created by Hunk on 14-6-4.
+//  Created by Hunk on 14-6-8.
 //  Copyright (c) 2014年 Hunk. All rights reserved.
 //
 
 import XCTest
 
-class TSwiftTests: XCTestCase {
+class TSwfitTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

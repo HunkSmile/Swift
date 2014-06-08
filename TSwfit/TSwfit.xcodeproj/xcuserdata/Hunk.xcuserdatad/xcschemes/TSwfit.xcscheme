@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B48BE69C193F2769009DC8E5"
-               BuildableName = "TSwift.app"
-               BlueprintName = "TSwift"
-               ReferencedContainer = "container:TSwift.xcodeproj">
+               BlueprintIdentifier = "B4DF845F194486EE00B5D2F0"
+               BuildableName = "TSwfit.app"
+               BlueprintName = "TSwfit"
+               ReferencedContainer = "container:TSwfit.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,20 +32,20 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B48BE6A9193F2769009DC8E5"
-               BuildableName = "TSwiftTests.xctest"
-               BlueprintName = "TSwiftTests"
-               ReferencedContainer = "container:TSwift.xcodeproj">
+               BlueprintIdentifier = "B4DF846C194486EE00B5D2F0"
+               BuildableName = "TSwfitTests.xctest"
+               BlueprintName = "TSwfitTests"
+               ReferencedContainer = "container:TSwfit.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B48BE69C193F2769009DC8E5"
-            BuildableName = "TSwift.app"
-            BlueprintName = "TSwift"
-            ReferencedContainer = "container:TSwift.xcodeproj">
+            BlueprintIdentifier = "B4DF845F194486EE00B5D2F0"
+            BuildableName = "TSwfit.app"
+            BlueprintName = "TSwfit"
+            ReferencedContainer = "container:TSwfit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -61,10 +61,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B48BE69C193F2769009DC8E5"
-            BuildableName = "TSwift.app"
-            BlueprintName = "TSwift"
-            ReferencedContainer = "container:TSwift.xcodeproj">
+            BlueprintIdentifier = "B4DF845F194486EE00B5D2F0"
+            BuildableName = "TSwfit.app"
+            BlueprintName = "TSwfit"
+            ReferencedContainer = "container:TSwfit.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -79,10 +79,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B48BE69C193F2769009DC8E5"
-            BuildableName = "TSwift.app"
-            BlueprintName = "TSwift"
-            ReferencedContainer = "container:TSwift.xcodeproj">
+            BlueprintIdentifier = "B4DF845F194486EE00B5D2F0"
+            BuildableName = "TSwfit.app"
+            BlueprintName = "TSwfit"
+            ReferencedContainer = "container:TSwfit.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
