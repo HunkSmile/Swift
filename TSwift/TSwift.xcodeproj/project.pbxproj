@@ -14,6 +14,7 @@
 		B48BE6B1193F2769009DC8E5 /* TSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48BE6B0193F2769009DC8E5 /* TSwiftTests.swift */; };
 		B48BE6BD193F27C3009DC8E5 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48BE6BC193F27C3009DC8E5 /* RootViewController.swift */; };
 		B4A575BD19403F6A008BBBE6 /* MathSum.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A575BC19403F6A008BBBE6 /* MathSum.m */; };
+		B4C191701944812A006DE94A /* SwiftMath.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C1916F1944812A006DE94A /* SwiftMath.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,7 @@
 		B4A575BB19403F69008BBBE6 /* TSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TSwift-Bridging-Header.h"; sourceTree = "<group>"; };
 		B4A575BC19403F6A008BBBE6 /* MathSum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MathSum.m; sourceTree = "<group>"; };
 		B4A575BE19403FA2008BBBE6 /* MathSum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MathSum.h; sourceTree = "<group>"; };
+		B4C1916F1944812A006DE94A /* SwiftMath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftMath.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				B4A575BA194020C2008BBBE6 /* MyPlayground.playground */,
 				B4A575BE19403FA2008BBBE6 /* MathSum.h */,
 				B4A575BC19403F6A008BBBE6 /* MathSum.m */,
+				B4C1916F1944812A006DE94A /* SwiftMath.swift */,
 				B4A575BB19403F69008BBBE6 /* TSwift-Bridging-Header.h */,
 				B48BE6A4193F2769009DC8E5 /* Images.xcassets */,
 				B48BE6A0193F2769009DC8E5 /* Supporting Files */,
@@ -220,6 +223,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B42D3D30193F4994005074F7 /* DetailViewController.swift in Sources */,
+				B4C191701944812A006DE94A /* SwiftMath.swift in Sources */,
 				B4A575BD19403F6A008BBBE6 /* MathSum.m in Sources */,
 				B48BE6BD193F27C3009DC8E5 /* RootViewController.swift in Sources */,
 				B48BE6A3193F2769009DC8E5 /* AppDelegate.swift in Sources */,
