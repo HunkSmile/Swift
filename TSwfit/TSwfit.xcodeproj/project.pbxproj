@@ -91,10 +91,10 @@
 				B4DF84911944880B00B5D2F0 /* MathSum.h */,
 				B4DF848F194487F200B5D2F0 /* MathSum.m */,
 				B4DF84921944884600B5D2F0 /* SwiftMath.swift */,
+				B4DF848E194487F200B5D2F0 /* TSwfit-Bridging-Header.h */,
 				B4DF84851944873300B5D2F0 /* swift-hero@2x.png */,
 				B4DF8467194486EE00B5D2F0 /* Images.xcassets */,
 				B4DF8463194486EE00B5D2F0 /* Supporting Files */,
-				B4DF848E194487F200B5D2F0 /* TSwfit-Bridging-Header.h */,
 			);
 			path = TSwfit;
 			sourceTree = "<group>";
@@ -408,6 +408,7 @@
 				B4DF8479194486EE00B5D2F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B4DF847A194486EE00B5D2F0 /* Build configuration list for PBXNativeTarget "TSwfitTests" */ = {
 			isa = XCConfigurationList;
@@ -416,6 +417,7 @@
 				B4DF847C194486EE00B5D2F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
