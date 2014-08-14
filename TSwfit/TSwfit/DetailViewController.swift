@@ -36,7 +36,7 @@ class DetailViewController : UIViewController, UIPickerViewDataSource, UIPickerV
             button?.setTitle("Touch Me", forState: UIControlState.Highlighted)
             button?.addTarget(self, action: "buttonAction:", forControlEvents: UIControlEvents.TouchUpInside)
             button!.tag = 100
-            self.view.addSubview(button)
+            self.view.addSubview(button!)
         }
         else if self.title == "UIImageView"
         {
@@ -165,7 +165,7 @@ class DetailViewController : UIViewController, UIPickerViewDataSource, UIPickerV
             button?.setTitle("Show ActionSheet", forState: UIControlState.Highlighted)
             button?.addTarget(self, action: "showActionSheet", forControlEvents: UIControlEvents.TouchUpInside)
             button!.tag = 101
-            self.view.addSubview(button)
+            self.view.addSubview(button!)
         }
         else if self.title == "UIActivityIndicatorView"
         {
