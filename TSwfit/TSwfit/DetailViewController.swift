@@ -12,7 +12,7 @@ class DetailViewController : UIViewController, UIPickerViewDataSource, UIPickerV
 {
     override func viewDidLoad()
     {
-        self.view!.backgroundColor = UIColor.whiteColor()
+        self.view.backgroundColor = UIColor.whiteColor()
         
         if self.title == "UILabel"
         {
@@ -36,12 +36,12 @@ class DetailViewController : UIViewController, UIPickerViewDataSource, UIPickerV
             button?.setTitle("Touch Me", forState: UIControlState.Highlighted)
             button?.addTarget(self, action: "buttonAction:", forControlEvents: UIControlEvents.TouchUpInside)
             button!.tag = 100
-            self.view.addSubview(button)
+            self.view.addSubview(button!)
         }
         else if self.title == "UIImageView"
         {
             var image     = UIImage(named: "swift-hero.png")
-            var imageView = UIImageView(frame: CGRectMake((CGRectGetWidth(self.view.bounds) - image.size.width) / 2.0, 120.0, image.size.width, image.size.height))
+            var imageView = UIImageView(frame: CGRectMake((CGRectGetWidth(self.view.bounds) - image!.size.width) / 2.0, 120.0, image!.size.width, image!.size.height))
             imageView.image = image
             self.view.addSubview(imageView)
         }
@@ -54,7 +54,7 @@ class DetailViewController : UIViewController, UIPickerViewDataSource, UIPickerV
         {
             var webView = UIWebView(frame:self.view.bounds)
             var url = NSURL(string: "http://caipiao.m.taobao.com")
-            var request = NSURLRequest(URL: url)
+            var request = NSURLRequest(URL: url!)
             webView.loadRequest(request)
             self.view.addSubview(webView)
         }
@@ -120,8 +120,8 @@ class DetailViewController : UIViewController, UIPickerViewDataSource, UIPickerV
         else if self.title == "UIPickerView"
         {
             var pickerView = UIPickerView(frame:CGRectMake(10.0, 120.0, 300.0, 200.0))
-            pickerView.delegate = self
-            pickerView.dataSource = self
+//            pickerView.delegate = self
+//            pickerView.dataSource = self
             self.view.addSubview(pickerView)
         }
         else if self.title == "UIProgressView"
@@ -165,7 +165,7 @@ class DetailViewController : UIViewController, UIPickerViewDataSource, UIPickerV
             button?.setTitle("Show ActionSheet", forState: UIControlState.Highlighted)
             button?.addTarget(self, action: "showActionSheet", forControlEvents: UIControlEvents.TouchUpInside)
             button!.tag = 101
-            self.view.addSubview(button)
+            self.view.addSubview(button!)
         }
         else if self.title == "UIActivityIndicatorView"
         {
@@ -206,18 +206,18 @@ class DetailViewController : UIViewController, UIPickerViewDataSource, UIPickerV
     
     // UIPickerViewDataSource Methods
     // returns the number of 'columns' to display.
-    func numberOfComponentsInPickerView(pickerView: UIPickerView!) -> Int
+    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int
     {
         return 3
     }
     
     // returns the # of rows in each component..
-    func pickerView(pickerView: UIPickerView!, numberOfRowsInComponent component: Int) -> Int
+    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int
     {
         return 10
     }
     
-    func pickerView(pickerView: UIPickerView!, titleForRow row: Int, forComponent component: Int) -> String!
+    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String
     {
         return String(format:"%i", row)
     }
