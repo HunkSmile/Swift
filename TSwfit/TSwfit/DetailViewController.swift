@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DetailViewController : UIViewController, UIPickerViewDataSource, UIPickerViewDelegate
+class DetailViewController : UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, UICollectionViewDelegate, UICollectionViewDataSource
 {
     override func viewDidLoad()
     {
@@ -174,6 +174,22 @@ class DetailViewController : UIViewController, UIPickerViewDataSource, UIPickerV
             activityIndicatorView.startAnimating()
             self.view.addSubview(activityIndicatorView)
         }
+        else if self.title == "UICollectionView"
+        {
+            // FlowLayout
+            var collectionViewFlowLayout = UICollectionViewFlowLayout();
+//            collectionViewFlowLayout.itemSize = CGSizeMake(<#width: CGFloat#>, <#height: CGFloat#>);
+            collectionViewFlowLayout.scrollDirection = UICollectionViewScrollDirection.Vertical;
+            
+            // Collection view
+            var collectionView = UICollectionView(frame: self.view.bounds, collectionViewLayout: collectionViewFlowLayout);
+            collectionView.backgroundColor = UIColor.whiteColor();
+            collectionView.delegate = self
+            collectionView.dataSource = self
+            self.view.addSubview(collectionView)
+            
+            collectionView.registerClass(CollectionViewCell.self, forCellWithReuseIdentifier: "ReuseIdentifier")
+        }
         else
         {}
     }
@@ -220,6 +236,51 @@ class DetailViewController : UIViewController, UIPickerViewDataSource, UIPickerV
     func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String
     {
         return String(format:"%i", row)
+    }
+    
+    // UICollectionViewDataSource methods
+    func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+        return 1;
+    }
+    
+    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 25;
+    }
+    
+    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("ReuseIdentifier", forIndexPath: indexPath) as CollectionViewCell;
+        
+        cell.imageView?.image = UIImage(named: String(format:"%ld.png", indexPath.row));
+        cell.textLabel?.text = String(format: "(%d, %d)", indexPath.section, indexPath.row);
+        
+        return cell;
+    }
+    
+    // UICollectionViewDelegateFlowLayout methods
+    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+        return CGSizeMake(100.0, 120.0);
+    }
+    
+    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAtIndex section: Int) -> UIEdgeInsets {
+        return UIEdgeInsetsMake(5.0, 5.0, 5.0, 5.0);
+    }
+    
+    // UICollectionViewDelegate method
+    func collectionView(collectionView: UICollectionView, shouldHighlightItemAtIndexPath indexPath: NSIndexPath) -> Bool {
+        return true
+    }
+    
+    func collectionView(collectionView: UICollectionView, didHighlightItemAtIndexPath indexPath: NSIndexPath) {
+    }
+    
+    func collectionView(collectionView: UICollectionView, didUnhighlightItemAtIndexPath indexPath: NSIndexPath) {
+    }
+    
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+    }
+    
+    func collectionView(collectionView: UICollectionView, shouldSelectItemAtIndexPath indexPath: NSIndexPath) -> Bool {
+        return true
     }
     
     // Button Handler
