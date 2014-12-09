@@ -35,7 +35,7 @@ class RootViewController : UIViewController, UITableViewDelegate, UITableViewDat
     {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as UITableViewCell
         cell.accessoryType = UITableViewCellAccessoryType.DisclosureIndicator
-        cell.textLabel.text = self.items?.objectAtIndex(indexPath.row) as String!
+        cell.textLabel?.text = self.items?.objectAtIndex(indexPath.row) as String!
         
         return cell
     }
